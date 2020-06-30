@@ -15,16 +15,31 @@
           <img class="logo" src="logo hendra gallery.png">
         </div>
         <!-- Tambahkan ikon menu disini -->
-        <a href="menu-icon"></a>
+         <ul class="topnav">
+           <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">☰</a></li>
+           <li class="icon2"><a href="#tentang" >Tentang kami</a></li>
+           <li class="icon2"><a href="#lukisan" >Lukisan</a></li>
+           <li class="icon2"><a href="#kontak" >Kontak</a></li>
+         </ul>
+
+         <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+        document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+        }
+         </script>
+
+        <!-- <a href="menu-icon"></a>
         <span class="fa fa-bars menu-icon"></span>
         </a>
         <div class="header-right">
           <a href="#tentang">Tentang Kami</a>
           <a href="#lukisan">Lukisan</a>
-          <a href="#kontak" >Kontak</a>
-        </div>
+          <a href="#kontak" class="login">Kontak</a>
+        </div> -->
       </div>
     </header>
+
      <div class="top-wrapper" id="tentang">
       <div class="container">
         <h1>Hendra Gallery</h1>
@@ -34,47 +49,63 @@
         
       </div>
     </div>
-    <div class="lesson-wrapper">
+    
+    <div class="lesson-wrapper" id="lukisan">
       <div class="container">
-        <div class="heading" id="lukisan">
-          <h2>Lukisan</h2>
+        <div class="heading" >
+          <h1>Lukisan</h1>
         </div>
         <div class="lessons">
+
           <div class="lesson">
             <div class="lesson-icon">
-              <img src="lukisan1.jpg" alt="lukisan 1">
-               <p>Lukisan Tebing Pantai</p>
+              <a href="">
+                <img src="lukisan1.jpg" alt="lukisan 1">
+                <p>Lukisan Tebing Pantai</p>
+              </a>
             </div>
              <p class="text-contents">Lukisan indah yang bertemakan alam.</p>
           </div>
+
           <div class="lesson">
             <div class="lesson-icon">
-              <img src="lukisan2.jpg" alt="lukisan 2">
-              <p>Lukisan Gurun Pasir</p>
+              <a href="">
+                <img src="lukisan2.jpg" alt="lukisan 2">
+                <p>Lukisan Gurun Pasir</p>
+              </a>
             </div>
             <p class="text-contents">Lukisan indah yang bertemakan alam.</p>
           </div>
+
           <div class="lesson">
             <div class="lesson-icon">
-              <img src="lukisan3.jpg" alt="lukisan 3">
-              <p>Lukisan Danau</p>
+              <a href="">
+                <img src="lukisan3.jpg" alt="lukisan 3">
+                <p>Lukisan Danau</p>
+              </a>
             </div>
             <p class="text-contents">Lukisan indah yang bertemakan alam.</p>
           </div>
+
           <div class="lesson">
             <div class="lesson-icon">
-              <img src="lukisan4.jpg" alt="lukisan 4">
-              <p>Lukisan Hutan</p>
+              <a href="">
+               <img src="lukisan4.jpg" alt="lukisan 4">
+               <p>Lukisan Hutan</p>
+              </a>
             </div>
             <p class="text-contents">Lukisan indah yang bertemakan alam.</p>
           </div>
+
           <div class="clear"></div>
         </div>
       </div>
     </div>
+
     <div class="message-wrapper" id="kontak">
       <div class="container">
-        <div class="heading">
+        <div class="heading" >
+          <h1>Kontak</h1>
           <h2>Apakah anda tertarik untuk memesan hasil karya lukisan kami ?</h2>
           <h3>Yuk di order, pemesanan bisa melalui tombol-tombol dibawah</h3>
         </div>
