@@ -93,7 +93,7 @@ header {
 
 .logo {
   width: 200px;
-  margin-top: 6px;
+  margin-top: 5px;
 }
 
 .header-left {
@@ -257,7 +257,7 @@ footer img {
 }
 
 footer {
-  background-color: black;
+  background-color: rgba(34, 49, 52);
 }
 
 footer p {
