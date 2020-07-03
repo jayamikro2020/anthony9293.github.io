@@ -138,7 +138,8 @@ ul.topnav li a {
 /* Change background color of links on hover */
 ul.topnav li.icon2 a:hover {
   background-color: rgba(255, 255, 255);
-  color: rgba(34, 49, 52);
+  color: rgba(34, 49, 52);      
+  border: 1px solid rgb(34, 49, 52);
 }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
