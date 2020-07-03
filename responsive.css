@@ -16,6 +16,12 @@
 
 /* Untuk Smartphone */
 @media all and (max-width: 680px) {
+  
+  .logo {
+    width: 200px;
+    margin-top: 15px;
+  }
+  
   .lesson {
     width: 100%;
   }
