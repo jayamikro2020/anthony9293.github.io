@@ -171,7 +171,7 @@ ul.topnav li.icon {display: none;}
 
 .gallerys {
   width: 100%;
-
+  margin-bottom: 40px;
 }
 
 .gallery {
@@ -188,6 +188,7 @@ ul.topnav li.icon {display: none;}
   float: left;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 20px;
   position: relative;
 }
 
@@ -206,6 +207,7 @@ ul.topnav li.icon {display: none;}
   top: 5%;
   text-align: center;
   line-height: 160px;
+  /*background-color: rgba(200,200,200,.5);*/
   color: white;
   font-size: 20px;
   opacity: 0;
@@ -236,7 +238,124 @@ ul.topnav li.icon {display: none;}
 /*.heading h3 {
   font-weight: normal;
 }*/
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0);
+  z-index: 9999;
+  transition: 1s;
+  text-align: center;
+  padding: 100px;
+}
 
+.overlay:target {
+
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+
+
+.overlay img {
+  max-height: 100%;
+  box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
+}
+
+.overlay:target img {
+  animation: zoomandfade 1s;
+}
+.close {
+  position: absolute;
+  margin-left: -10000px;
+}
+
+.overlay:target .close {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  color: white;
+  text-decoration: none;
+  margin-left: -10px;
+  background-color: black;
+  border: 1px solid white;
+  line-height: 14px;
+  padding: 5px;
+}
+
+/* navigasi */
+.next, .prev {
+  position: absolute;
+  margin-left: -10000px;
+}
+
+.overlay:target .next {
+  width: 100px;
+  height: 100px;
+  background-image: url(image/next_but.png);
+  position: absolute;
+  text-indent: -9999px;
+  top: 40%;
+  margin-left: 10px;
+}
+
+.overlay:target .prev {
+  width: 100px;
+  height: 100px;
+  background-image: url(image/prev_but.png);
+  position: absolute;
+  text-indent: -9999px;
+  top: 40%;
+  margin-left: -110px;
+}
+
+/* animasi overlay */
+@keyframes zoomandfade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*button*/
+.view_more {
+  /*position: relative;*/
+    width: 20px;
+    height: 10px;
+    text-decoration: none;
+    /*top: 20px;*/
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px 20px;
+    font-size: 25px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    background-color: white;
+
+  }
+  .view_more:hover{
+    border: 1px solid #b1b1b1;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .view_more span {
+    /*position: absolute;*/
+    color: #5f5d60;
+  }
+  
+
+
+
+/*-------------------------------------------------*/
 .message-wrapper {
   border-bottom: 1px solid #eee;
   padding-top: 50px;
