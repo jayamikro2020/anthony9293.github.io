@@ -1,11 +1,20 @@
 /* Untuk Tablet */
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
+@media screen and (max-width: 1000px) {
+
+  .logo {
+  width: 230px;
+  margin-top: 15px;
   }
   
-  .top-wrapper h1 {
+  
+
+  .gallery {
+    width: 50%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .profile-wrapper h1 {
     font-size: 32px;
   }
   
@@ -15,20 +24,25 @@
 }
 
 /* Untuk Smartphone */
-@media all and (max-width: 680px) {
-  
+@media screen and (max-width: 680px) {
+
   .logo {
     width: 150px;
     margin-top: 23px;
   }
   
-  .lesson {
-    width: 100%;
+  .gallerys {
+    margin-left: 40px;
   }
 
-  .lesson-wrapper {
-    text-align: center;
+  .gallery {
+    width: 100%;
+
   }
+
+  /*.gallery-wrapper {
+    margin: auto;
+  }*/
   
   footer {
     text-align: center;
@@ -42,9 +56,6 @@
     margin-bottom: 10px;
   }
   
-  .top-wrapper {
-    text-align: center;
-  }
   
   /* Saat lebar layar kurang dari 680 pixel, sembunyikan semua menu item kecuali item yang pertama yaitu("Home"). Tampilkan juga list item yang berisi link untuk membuka menu yaitu (li.icon) */
   ul.topnav li/*:not(:first-child)*/ {display: none;}
@@ -54,9 +65,12 @@
   }
 }
 
+
+
+
 /* Class dengan nama "responsive" akan ditambahkan oleh JavaScript saat user mengklik icon. Munculnya Class ini akan mendisplay isi list menu 
 */
-  @media all and (max-width:680px) {
+  @media screen and (max-width:680px) {
   ul.topnav.responsive {
     position: relative;
   }
@@ -90,13 +104,19 @@
   .menu-icon {
     display: block;
   }*/
-  
-  .top-wrapper h1 {
+
+  /*.gallery {
+  float: left;
+  width: 100%;
+}*/
+
+
+  .profile-wrapper h1 {
    /* font-size: 24px;*/
     line-height: 50px;
   }
   
-  .top-wrapper p {
+  .profile-wrapper p {
     font-size: 20px;
     line-height: 30px;
   }
